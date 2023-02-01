@@ -45,7 +45,7 @@ section{
     margin: 0 auto;
 }
 
-/*---------------HEADER----------------*/
+/*------------------------HEADER--------------------------*/
 
 .header{
     position: fixed;
@@ -84,7 +84,6 @@ section{
     cursor: pointer;
     font-size: 2rem;
 }
-
 .home{
     margin-top: 6rem;
 }
@@ -159,6 +158,8 @@ section{
     color: var(--white);
     margin-bottom: .5rem;
 }
+
+/*-------------------------ABOUT US--------------------------*/
 .about .row{
     display: flex;
     align-items: center;
@@ -186,18 +187,223 @@ color: var(--white);}
     color: var(--white);
 }
 
+/*------------------------------- Course Section --------------------*/
 
+.heading{
+    margin-bottom: 2.5rem;
+    text-align: center;
+    font-size: 4rem;
+    color: var(--white);
+}
+.heading span {
+    color: var(--green);
+}
+.courses .slide{
+    background-color: var(--lg-bg);
+    border-radius: .5rem;
+    text-align: center;
+    padding: 2rem;
+    margin-bottom: 4rem;
+}
+.courses .slide img{
+    height: 25rem;
+    width: 100%;
+}
+.courses .slide h3{
+    margin: 1.5rem 0;
+    font-size: 2rem;
+    color: var(--white);
+    font-weight: 800;
+}
+.courses .slide p {
+    line-height: 2;
+    font-size: 1.6rem;
+    color: var(--white);
+    font-weight: 600;
+}
+.swiper-pagination-bullet{
+    background-color: var(--white);
+}
+.swiper-pagination-bullet-active{
+    background-color: var(--green);
+}
 
+/*------------------------------teachers section------------------------------*/
 
+.teachers .slide {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 4rem;
+}
+.teachers .slide img {
+    height: 55rem;
+    width: 100%;
+    object-fit: cover;
+    border-radius: .5rem;
+}
+.teachers .slide h3{
+    margin-top: 1.5rem;
+    font-size: 2rem;
+    color: var(--white);
+    text-align: center;
+}
+.teachers .slide .share{
+    position: absolute;
+    top: 1rem;
+    left: -10rem;
+}
+.teachers .slide .share a{
+    display: flex;
+    margin-top: 1rem;
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    border-radius: .5rem;
+    background-color: var(--white);
+    justify-content: center;
+    text-decoration: none;
+    color: var(--black);
+    font-size: 2rem;
+}
+.teachers .slide .share a:hover{
+    background-color: var(--green);
+    color: var(--white);
+    transition: all 0.4s;
+}
+.teachers .slide:hover .share{
+    left: 2rem;
+}
 
+.review-slider .slide{
+    width: 35rem;
+    border-radius: .5rem;
+    background-color: var(--lg-bg);
+    padding: 2rem;
+    margin-bottom: 4rem;
+}
+.review-slider .slide p{
+    line-height: 2;
+    font-size: 1.6rem;
+    color: var(--white);
+    /*max-height: 12rem;
+    overflow-x: scroll;
+    overflow-y: scroll;*/
+}
+.review-slider .slide .user{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+.review-slider .slide .user img {
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.review-slider .slide .user h3{
+    font-size: 2rem;
+    color: var(--white);
+    margin-bottom: .7rem;
+}
+.review-slider .slide .user .star i {
+    font-size: 1.5rem;
+    color: var(--green);
+}
 
+/*--------------------- contact section ------------------------*/
 
+.contact .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.contact .row .image{
+    flex: 1 1 40rem;
+}
 
+.contact .row .image img {
+    width: 100%;
+}
+.contact .row form{
+    flex:1 1 40rem;
+}
+.contact .row form .box {
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    border-radius: .5rem;
+    background-color: var(--lg-bg);
+    font-size: 1.8rem;
+    color: var(--white);
+    padding: 1.4rem;
+}
+.contact .row form span{
+    font-size: 1.5rem;
+    color: var(--white);
+    font-weight: 500;
+}
+.contact .row form .radio{
+    margin-top: 2rem;
+    margin-bottom: .5rem;
+}
+.contact .row form .radio label{
+    font-size: 1.5rem;
+    color: var(--white);
+    margin-left:.5rem ;
+}
+.contact .row form .radio #female{
+    margin-left: 2rem;
+}
+.contact .row form .radio input{
+    appearance:none;
+    height: 2rem;
+    width: 2rem;
+    background-color: var(--lg-bg);
+    cursor: pointer;
+    border-radius: 2px;
+}
+.contact .row form .radio input:checked{
+    background-color: var(--green);
+    border-radius: 5rem;
+}
 
+/*-----------------------footer------------------------*/
 
+.footer{
+    background-color: var(--lg-bg);
+    text-align: center;
+    
+}
+.footer .share a{
+    margin: 0 .3rem;
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--white);
+    background-color: var(--black);
+    text-decoration: none;
+}
+.footer .share a:hover{
+    background-color: var(--green);
+}
+.footer .credit{
+    margin-top: 2.5rem;
+    padding-top: 2.5rem;
+    border-top: .1rem solid var(--light-white);
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--light-white);
+}
+.footer .credit span a{
+    color: var(--green);
+    font-weight: 700;
+    text-decoration: none;
 
-
-
+}
 
 
 
@@ -273,4 +479,32 @@ color: var(--white);}
     }
    
 
+}
+
+@media (min-width:367px) and (max-width:403px){
+    .teachers .slide {
+       
+        width: 30rem;
+        overflow: hidden;
+    }
+    .teachers .slide img {
+        height: 60rem;
+        width: 100%;
+        object-fit: cover;
+        border-radius: .5rem;
+    }
+}
+@media (min-width:404px) and (max-width:1014px){
+    .teachers .slide {
+       text-align: center;
+        width: 30rem;
+        overflow: hidden;
+    }
+    .teachers .slide img {
+        height: 55rem;
+        width: 350px;
+        max-width: 100%;
+        object-fit: cover;
+        border-radius: .5rem;
+    }
 }
